@@ -1,0 +1,2355 @@
+:root{
+    /*color da safiga ah*/
+    --madaw:#17202a;
+    --cadaan:#ffffff;
+    /*colorada kale*/
+    --buluug1:#6366f1;
+    --buluug2:#213446;
+    --buluug3:#7174f1;
+    --bluluug4:#294253;
+    --cadaan-hurda:#fafafa;
+    --madaw-hurda: rgba(0, 0, 0, 0.6);
+    --grey: #85929e ;
+    --buluug5: #3498db;
+    --cawlaan:#ccc;
+    --madawyar:#0000001a;
+}
+@font-face {
+    font-family:poppins;
+    src: url(../popins/Poppins-Regular.ttf);
+  
+}
+@font-face {
+    font-family:poppins2;
+    src: url(../popins/Poppins-Bold.ttf);
+  
+}
+
+*{
+    padding: 0%;
+    margin: 0px;
+    box-sizing: border-box;
+   
+   
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+ padding: auto 20px;
+}
+
+
+/* nav br desing  */
+section.nav_con{
+    height: 80px;
+    width: 100%;
+    background-color: var(--cadaan-hurda);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  position: fixed;
+  z-index: 99;
+
+}
+section.nav_con nav{
+    height: 80px;
+    width: 100%;
+    display: grid;
+ grid-template-columns: 1fr 2fr 1fr;
+ grid-template-rows: repeat(1,auto);
+ justify-content: center; 
+ align-content: center;
+ justify-content: space-between;
+
+}
+
+.nav_con nav ul.ul_links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-transform: uppercase;
+  
+}
+.nav_con nav h1{
+font-family: poppins2;
+/* font-weight: bold; */
+font-size: 30px;
+line-height: 80px ;
+text-transform: uppercase;
+}
+/* waa qeybta colorka kale leh  */
+.nav_con nav h1 span{
+    color: var(--buluug1);
+    font-weight: bold;
+}
+
+.ul_links a{
+    text-decoration: none;
+    font-family:poppins2 ;
+    font: 18px;
+    /* font-weight: bold; */
+    color: var(--buluug1);
+    /* color: var(--madaw); */
+font-weight: lighter;
+
+
+
+}
+
+
+.ul_links li{
+    padding: 15px;
+    font-size: 13px;
+    line-height: 40px;
+    font-family: poppins;
+    margin: 0px 6px;
+    transition: all 2s ease-out;
+    
+
+}
+
+
+.ul_links  a:hover {
+    color: var(--madaw); 
+    text-decoration: underline;
+}
+.ul_links li:nth-child(1) a {
+    color: var(--madaw);
+}
+
+/* buttonka singup  */
+.nav_con nav div.actions{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   flex-flow: row nowrap;
+ 
+
+}
+div.actions button{
+    background-color: var(--buluug1);
+    outline: none;
+    border: none;
+    color: var(--cadaan);
+    height: 40px;
+    width: 80px;
+    font-family: poppins;
+
+
+
+}
+div.actions button{
+  cursor: pointer;
+}
+/* nav_mobile style  */
+.nav_mobile{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100px;
+  flex-flow: row nowrap;
+  margin-top: 20px;
+  /* background-color: red; */
+  
+}
+.btn_mobile{
+  height: 40px;
+width: 40px;
+border-radius: 2px;
+background-color: var(--color2);
+display: flex;
+justify-self: flex-start;
+align-items: center;
+flex-flow: wrap row;
+cursor: pointer;
+}
+.menu-icon {
+  font-size: 30px;
+  color: var(--madaw);
+  cursor: pointer;
+}
+
+
+
+
+/* hero one style  ....................................................................................*/
+
+section.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: url(../images/MD3.mp4) center/cover no-repeat; */
+  
+  }
+  
+  .hero-video {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    filter: brightness(50%);
+ 
+
+  }
+  
+ 
+   .hero div.hero_desc{
+height: 100%;
+width: 100%;
+position: relative;
+z-index: 1;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center; /*halkaa */
+text-align: center;
+color: var(--cadaan);
+padding-top: 150px;
+
+
+   }
+  
+  
+.sub_qoraal {
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+      font-family:poppins;
+      font-size: 18px;
+      line-height: 22px;
+ 
+  }
+  
+  .qoraal_weyn {
+    font-size: 84px;
+    font-weight: 900;
+    margin-bottom: 24px;
+    line-height: 101px;
+     font-family:poppins;
+  }
+  
+  .qoraal_weyn span {
+    color: var(--buluug3); 
+  }
+  
+  .become {
+    display: inline-block;
+    color: white;
+    /* font-weight: bold; */
+    border-radius: 5px;
+   transition: all 0.5s ease-in-out;
+    background-color: var(--buluug1);
+    text-decoration: none;
+    padding: 12px  25px;
+    font-family: poppins;
+    font-size: 15px;
+    line-height: 25px;
+    
+  }
+  .become:hover{
+  background-color: var(--buluug2);
+  border: 1px solid var(--cadaan);
+   margin-bottom: 5px;
+  }
+  
+ 
+  /*  hero section 2 ............................................................................ */
+  .her02{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    flex-flow: column nowrap;
+    /* margin-left: auto;
+    margin-right: auto; */
+
+  }
+ .hero2 div .hero2_title{
+    /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+flex-flow: column nowrap;
+width:50%;
+height: 100%;
+padding:20px ;
+/* margin: 100px  auto; */
+margin-top:100px ;
+margin-left: 40%;
+margin-right: auto;
+gap: 12px;
+text-align: center;
+
+ }
+ .hero2 div .hero2_title h1{
+    font-size: 28px;
+    line-height: 34px;
+    font-family:poppins2;
+   
+
+   
+ }
+ .hero2 div .hero2_title h1 span{
+    color: var(--buluug1);
+        font-family:poppins2;
+
+ }
+ .hero2 div.hero2_title p{
+    line-height: 25px;
+    font-family: poppins;
+  line-height: 25px;
+color: var(--grey);
+font-size: 14px;
+ }
+
+
+ .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    padding: 32px;
+    margin-left: 10%;
+  }
+  .cards div.card h2{
+    font-family: poppins;
+    font-size: 19px;
+    line-height: 25px;
+   
+   
+  }
+  .cards div.card p {
+    font-family: poppins;
+    font-size: 14px;
+  
+  }
+  
+  .card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 16px;
+    gap: 24px;
+    justify-content: center;
+  
+ 
+  }
+  
+  
+  .card img {
+    width: 100px;
+    height: 100px;
+ 
+   
+  }
+  
+  .title {
+    flex: 1;
+    /* background-color: green; */
+  }
+  
+  .title h2 {
+    font-size: 21px;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .title p {
+    font-size: 15px;
+    color: var(--grey);
+    margin-bottom:13px;
+  }
+  
+  a.descover {
+    text-decoration: none;
+    color: var(--buluug1);
+  font-family: poppins;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  a.descover:hover {
+color: var(--buluug3);
+  }
+  a.pixels{
+    text-decoration: none;
+    color:var(--buluug5);
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s;
+    font-family: poppins;
+  }
+  a.Digital{
+    text-decoration: none;
+    color: var(--buluug5);
+font-family: poppins;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+
+  /* hero 3 ................................................................ */
+  section.hero3{
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin: 80px 0px;
+
+
+  }
+ 
+  section div .qoraal{
+   position: absolute;
+   top: 50%;
+   left: 25%;
+   color: var(--cadaan);
+   transform: translateY(-50%);
+   padding: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-flow: column nowrap;
+   width: 50%;
+ 
+  }
+    section div .qoraal p{
+      text-align: center;
+         font-family:poppins;
+     
+    }
+  section div .qoraal h1{
+ font-family: poppins2;
+font-weight: bold;
+font-size: 32px;
+line-height: 80px ;
+text-transform: uppercase;
+
+  }
+  .become2{
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--buluug1);
+    text-decoration: none;
+    padding: 12px  25px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+   font-family:poppins;
+   transition: all 0.5s ease-out;
+   
+ 
+
+  }
+  .become2:hover{
+    background-color: var(--buluug2);
+    border: solid 1px #fff;
+  }
+  section div .qoraal a{
+    margin-top: 10px;
+  }
+
+  #think{
+    color: var(--buluug1);
+  }
+  /*section 4 ................................................................... */
+  .hero4{
+   display: flex;
+   height: 100%;
+   width: 100%;
+
+  }
+  .hero4 div.title_hero4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  flex-flow: column nowrap;
+  width:50%;
+  height: 100%;
+  padding:20px ;
+  /* margin: 100px  auto; */
+  margin-top:100px ;
+  margin-left: 40%;
+  margin-right: auto;
+  gap: 12px;
+  text-align: center;
+  
+  }
+  .hero4 div.title_hero4 h1{
+    font-size: 28px;
+    line-height: 34px;
+    font-family:poppins2 ;
+  }
+
+  .hero4 div.title_hero4 h1 span{
+    color: var(--buluug1);
+  }
+  .hero4 div.title_hero4 p{
+    color: var(--grey);
+    font-size: 14px;
+    font-family: poppins;
+    line-height: 25px;
+  }
+  .hero4 .qeybo {
+    display: flex;
+    margin: auto;
+    padding: 40px;
+    max-width: 1200px;
+    /* background-color: green; */
+  }
+  
+  .hero4 .qeyb {
+    flex: 1;
+  }
+  
+  .hero4 .bidix {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .hero4 .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .hero4 .card {
+    display: flex;
+    align-items: center;
+    background: var(--cadaan);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px var(--madawyar);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  
+  .hero4 .card img {
+    width: 40px;
+    margin-right: 15px;
+    height: 40px;
+  }
+  
+  .hero4 .card span {
+    font-size: 18px;
+    color: var(--madaw-hurda);
+ font-family: poppins;
+ transition: all 0.5s ease-in-out;
+
+  }
+  
+  .hero4 .card span:hover {
+    color: var(--buluug1);
+  }
+  .hero4 .card.taabo span {
+    color: var(--buluug1);
+  }
+  
+  .hero4 .button-container {
+    margin-top: 10px;
+    margin-left: 90px;
+  }
+  
+  .hero4 .btn {
+    background-color: var(--buluug1);
+    color: var(--cadaan);
+    padding: 15px 25px;
+    border: none;
+    font-size: 18px;
+  border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+    height: 80px;
+    transition: all 0.5s ease-in-out;
+    font-family: poppins;
+ 
+  }
+  
+  .hero4 .btn:hover {
+    background-color: var(--buluug2);
+  }
+  .hero4 .view{
+      margin-top: 20px;
+    /* margin-left: 90px; */
+   
+  }
+  .hero4 .btn2 {
+    background-color: var(--buluug1);
+    color: var(--cadaan);
+    padding: 10px 25px;
+    border: none;
+    font-size: 16px;
+  border-radius: 5px;
+    cursor: pointer;
+    width: 40%;
+    height: 40px;
+      transition: all 0.5s ease-in-out;
+      font-family: poppins;
+
+ 
+  }
+    .hero4 .btn2:hover{
+      background-color: var(--buluug2);
+     
+    }
+
+
+  
+  .hero4 .midig {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+  }
+  
+  .hero4 .sawirka_weyn {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 10px;
+    flex-grow: 1;
+  }
+  
+  .hero4 .text-content h2 {
+    font-size: 28px;
+    color: var(--madaw);
+    margin-bottom: 10px;
+  }
+  
+  .hero4 .qoraal_hero4 p {
+    color:var(--grey);
+    line-height: 24px;
+    font-size: 14px;
+    padding-top: 24px;
+    font-family: poppins;
+
+  }
+
+  /* section five .......................................................... */
+  
+  section.hero5{
+    display: flex;
+    height: 100%;
+    width: 100%;
+   background: url(../images/schedule-bg.jpg) center/cover no-repeat;
+    margin-top: 100px;
+     
+
+   }
+   .hero5 div.title_hero5{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   flex-flow: column nowrap;
+   width:80%;
+   height: 200px;
+   padding:20px ;
+   /* margin: 100px  auto; */
+   margin-top:100px;
+   margin-left: 30%;
+   margin-right: auto;
+   gap: 12px;
+   text-align: center;
+ 
+  
+  
+
+   
+   }
+   .hero5 div.title_hero5 h1{
+     font-size: 28px;
+     line-height: 34px;
+     font-family:poppins2 ;
+     color: var(--cadaan);
+   }
+ 
+   .hero5 div.title_hero5 h1 span{
+     color: var(--buluug1);
+   }
+   .hero5 div.title_hero5 p{
+     color: var(--cadaan);
+     font-size: 14px;
+     font-family: poppins;
+    
+   }
+   
+  
+.hero5 {
+  padding: 50px;
+}
+
+.week_days{
+  /* background-color: green; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row ;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  padding:20px ;
+  margin-left: 30%;
+  margin-right: auto;
+  gap: 40px;
+ 
+}
+.week_days span{
+  font-size: 15px;
+  line-height: 23px;
+  /* font-weight: bold; */
+  font-size: 16px;
+  color: var(--cadaan);
+  margin: 0 10px;
+ text-transform: capitalize;
+ font-family: poppins;
+ transition: all 0.5s ease-in-out;
+
+}
+.week_days span:first-child{
+  color: var(--buluug1);
+}
+.week_days span:hover{
+  color: var(--buluug1);
+ cursor: pointer;
+}
+.hero5 div.grid_table{
+margin-left: 30%;
+margin-right: auto;
+margin-top: 20px;
+width: 100%;
+height: 500px;
+display: grid;
+grid-template-columns: repeat(4,240px) ;
+grid-template-rows: repeat(5,100px);
+border: 1px solid var(--cadaan);
+justify-content: center;
+align-content: center;
+}
+.hero5 div.grid_table div.gudaha{
+
+border:  1px solid var(--cadaan);
+color: var(--cadaan);
+display: grid;
+align-content: center;
+padding: 0px 10px;
+justify-content: center;
+font-family: poppins;
+line-height: 20px;
+font-size: 13px;
+}
+
+/* hero six====================================================== */
+section.hero6{
+ height: 100%;
+ width: 100%;
+ display: flex;
+}
+section.hero6 div.hero6_title{
+  display: flex;
+     justify-content: center;
+     align-items: center;
+   flex-flow: column nowrap;
+   width:50%;
+   height: 200px;
+   padding:20px ;
+   /* margin: 100px  auto; */
+   margin-top:80px ;
+   margin-left: 35%;
+   margin-right: auto;
+   gap: 12px;
+   text-align: center;
+  
+}
+section.hero6 div.hero6_title h1{
+  font-size: 28px;
+     line-height: 34px;
+     font-family:poppins2;
+   text-transform: uppercase;
+   
+}
+section.hero6 div.hero6_title h1 span{
+color: var(--buluug1);
+}
+section.hero6 div.hero6_title p{
+  color: var(--grey);
+  font-size: 14px;
+  font-family:poppins; 
+  line-height: 25px;
+}
+section.hero6 div.cards{
+  /* background-color: var(--buluug1); */
+  width: 100%;
+  height:100%;
+  display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(1,1fr);
+justify-content: center;
+padding: 50px;
+gap: 30px;
+
+
+}
+
+section.hero6 div.cards div.card1{
+background-color: var(--cadaan);
+  border-radius: 12px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  /* background-color: green; */
+
+}
+section.hero6 div.cards div.cont_card{
+  box-shadow: 0 8px 20px var(--madawyar);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+
+ 
+}
+section.hero6 div.cards div.card1 div.sawir img{
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+
+}
+section.hero6 div.cards div.card1 div.card_desc{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  margin: 10px;
+}
+section.hero6 div.cards div.card1 div.card_desc span{
+  color: var(--buluug1);
+  font-family: poppins;
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 20px;
+
+
+}
+section.hero6 div.cards div.card1 div.card_desc h1{
+ margin-bottom: 10px;
+ font-size: 19px;
+ font-family: poppins;
+ line-height: 20px;
+}
+section.hero6 div.cards div.card1 div.card_desc p{
+margin: 5px 0px;
+color: var(--grey);
+font-size: 19px;
+font-family: poppins;
+}
+
+div.icons ion-icon{
+  font-size: 20px;
+  margin: 0px 6px;
+  transition: color 0.3s;
+  cursor: pointer;
+  color: var(--madaw);
+  background: none;
+margin-bottom: 15px;
+transition: all 0.4s ease-in;
+
+}
+
+div.icons ion-icon:hover{
+  color: var(--buluug1);
+}
+
+/* last section=============================================================== */
+section.last_section{
+  height: 100%;
+  width: 100%;
+
+}
+
+section.last_section div.parts{
+display: grid;
+align-content: center;
+justify-content: center;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: repeat(1,1fr);
+gap: 40px;
+  margin-top: 40px;
+  /* background-color: red; */
+  width: 100%;
+}
+section.last_section div.parts div.part1{
+ width: 100%;
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+}
+section.last_section div.parts div.part2 {
+  margin-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+div.part2 form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+body{
+  overflow-x: hidden;
+}
+
+div.part2 .row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+div.part2 .row input[type="text"],
+div.part2 .row input[type="email"] {
+  flex: 1;
+  min-width: calc(50% - 10px); 
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 14px;
+  border: 1px solid var(--cawlaan); 
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: poppins;
+  
+}
+
+textarea {
+  resize: none;
+  height: 160px;
+}
+
+
+
+.send{
+ height: 40px;
+ width: 150px;
+ color: var(--cadaan);
+ background-color: var(--buluug1);
+ border-radius: 5px;
+font-size: 12px;
+font-family: poppins;
+
+
+ border: none;
+}
+.send:hover{
+  cursor: pointer;
+}
+footer{
+  display: flex;
+  justify-content: center;
+align-items: center;
+margin-top: 20px;
+ margin-left: 30%;
+ margin-bottom: 40px;
+
+}
+footer span{
+  font-size: 14px;
+  font-family: poppins;
+  text-decoration: none;
+  padding: 5px;
+
+}
+footer span a{
+  text-decoration: none;
+  color: var(--buluug1);
+}
+
+
+
+/* media quaries===============================*/
+
+/*x small  screen*/
+@media (max-width: 480px) {
+  .container {
+    max-width: 400px;
+  }
+
+  section.nav_con nav {
+    /* background-color: green; */
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .nav_con nav h1 {
+    font-size: 24px;
+    margin-top: 0;
+    line-height: 80px;
+  }
+
+  .nav_con nav ul.ul_links{
+ 
+    display: none;
+  }
+  .nav_con nav div.actions {
+    display: none;
+  }
+
+  .nav_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .btn_mobile {
+    height: 40px;
+    width: 40px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .menu-icon {
+    font-size: 26px;
+    color: var(--madaw);
+  }
+   .nav_con nav h1 {
+    font-size: 16px;
+    margin-top: 0;
+    line-height: 80px;
+  }
+  .qoraal_weyn {
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 24px;
+  line-height: 101px;
+}
+/* hero 222====================== */
+ .hero2 div .hero2_title{
+  /* display: grid; */
+
+ }
+ .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 25px;
+    margin-left: 10%;
+    padding: 0px 10px;
+  }
+  .hero2 div .hero2_title{
+    display: flex;
+    width: 100%; 
+    /* background-color: green; */
+    margin-left: 0%;
+    /* margin-right: auto;
+    */
+
+  }
+  .card{
+    display: flex;
+    justify-content: center;
+      gap: 12px;
+  }
+  .title h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--madaw);
+  }
+   a.descover {
+       font-size: 12px;
+   }
+   /* section 3  */
+section div .qoraal{
+   position: absolute;
+   top: 5%;
+   left: 25%;
+   color: var(--cadaan);
+   transform: translateY(-20%);
+   padding: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-flow: column nowrap;
+   width: 50%;
+ 
+  }
+
+     section.hero3{
+   height: auto;
+    margin: 40px 0;
+    padding: 0 10px;
+
+  }
+    section div .qoraal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+  }
+    section div .qoraal h1 {
+    font-size: 22px;
+    line-height: 40px;
+  }
+    section div .qoraal p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  
+/* section 4   */
+ .hero4{
+display: flex;
+flex-direction: column;
+padding: 20px;
+  }
+  .hero4 div.title_hero4{
+width: 100%;
+margin-left: 0%;
+margin-right: 0%;
+   }
+   .hero4 .qeybo {
+    flex-direction: column;
+    padding: 30px 10px;
+    /* background-color: red; */
+   }
+     
+  .hero4 .button-container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+margin: 10px 0px;
+ /* background-color: green; */
+  }
+   .hero4 .btn {
+    background-color: var(--buluug1);
+    color: var(--cadaan);
+    padding: 15px 25px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+ 
+  }
+  .hero4 .sawirka_weyn {
+    margin-top: 20px;
+  }
+  .hero4 .btn2{
+    padding: 2px 0px;
+  }
+   .hero4 .view{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   
+   }
+   /* section five ------ */
+   section.hero5 {
+    padding: 20px;
+    margin-top: 50px;
+    background-position: center top;
+  }
+
+  .hero5 div.title_hero5 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .hero5 div.title_hero5 h1 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .hero5 div.title_hero5 p {
+    font-size: 14px;
+  }
+
+  .week_days {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto 0 auto;
+    padding: 10px;
+  }
+
+  .week_days span {
+    font-size: 14px;
+    margin: 0 5px;
+  }
+
+  .hero5 div.grid_table {
+    margin: 10px auto;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-auto-rows: (50px, auto);
+ 
+    /* gap: 1px; */
+  }
+
+  .hero5 div.grid_table div.gudaha {
+    padding: 10px;
+  font-size: 14px;
+
+  text-align: center;
+   border: 1px solid white;
+  color: white;
+  
+  }
+  /* section six  */
+  section.hero6 div.hero6_title{
+    display: flex;
+    gap: 8px;
+   justify-content: center;
+   margin-left: 0px;
+   width: 100%;
+   padding: 30px;
+
+  }
+  section.hero6 div.cards{
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+  }
+section.hero6 div.cards div.card1 div.card_desc{
+  margin-bottom: 5px;
+}
+section.hero6 div.hero6_title h1{
+  font-size: 20px;
+}
+
+/* last section */
+
+ section.last_section div.parts {
+    display: block;
+    width: 100%; 
+    padding: 10px;
+  }
+
+  section.last_section div.parts div.part2 {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */
+    margin: 20px 0px;
+    
+  }
+    .row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .row input[type="text"],
+  .row input[type="email"] {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+
+
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  .send {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  div.part2 .row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .row input[type="text"],
+  .row input[type="email"] {
+    width: 100%;
+  }
+
+  .send {
+    width: 100%;
+  }
+
+
+
+
+
+  
+
+
+
+
+}
+
+
+/*small screens */
+@media (min-width: 481px) and (max-width: 767px){
+  .container{
+      max-width: 700px;
+  }
+  /* navbar style  */
+  section.nav_con nav {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .nav_con nav h1 {
+    font-size: 24px;
+    margin-top: 0;
+    line-height: 80px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav_con nav ul.ul_links{
+ 
+    display: none;
+  }
+  .nav_con nav div.actions {
+    display: none;
+  }
+
+  .nav_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .btn_mobile {
+    height: 40px;
+    width: 40px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .menu-icon {
+    font-size: 26px;
+    color: var(--madaw);
+  }
+  /* section 2 style  */
+ .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 25px;
+    margin-left: 10%;
+    padding: 0px 10px;
+  }
+  .hero2 div .hero2_title{
+    display: flex;
+    width: 100%; 
+    /* background-color: green; */
+    margin-left: 0%;
+    /* margin-right: auto;
+    */
+
+  }
+    .card{
+    display: flex;
+    justify-content: center;
+      gap: 14px;
+  }
+    .title h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--madaw);
+  }
+   a.descover {
+       font-size: 14px;
+   }
+    /* section 3  */
+section div .qoraal{
+   position: absolute;
+   top: 5%;
+   left: 25%;
+   color: var(--cadaan);
+   transform: translateY(-20%);
+   padding: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-flow: column nowrap;
+   width: 50%;
+ 
+  }
+
+     section.hero3{
+   height: auto;
+    margin: 40px 0;
+    padding: 0 10px;
+
+  }
+    section div .qoraal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+  }
+    section div .qoraal h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+    section div .qoraal p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  /* section 4   */
+ .hero4{
+display: flex;
+flex-direction: column;
+padding: 20px;
+  }
+  .hero4 div.title_hero4{
+width: 100%;
+margin-left: 0%;
+margin-right: 0%;
+   }
+   .hero4 .qeybo {
+    flex-direction: column;
+    padding: 30px 10px;
+    /* background-color: red; */
+   }
+     
+  .hero4 .button-container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+margin: 10px 0px;
+ /* background-color: green; */
+  }
+    .hero4 .sawirka_weyn{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   .hero4 .btn {
+    background-color: var(--buluug1);
+    color: var(--cadaan);
+    padding: 15px 25px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    width: 95%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+ 
+  }
+  .hero4 .sawirka_weyn {
+    margin-top: 20px;
+  }
+  .hero4 .btn2{
+    padding: 10px 0px;
+  width: 30%;
+  height: 50px;
+  border-radius: 0%;
+  }
+   .hero4 .view{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   
+   
+   }
+    /* section five ------ */
+   section.hero5 {
+    padding: 20px;
+    margin-top: 50px;
+    background-position: center top;
+  }
+
+  .hero5 div.title_hero5 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .hero5 div.title_hero5 h1 {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .hero5 div.title_hero5 p {
+    font-size: 16px;
+  }
+
+  .week_days {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto 0 auto;
+    padding: 10px;
+  }
+
+  .week_days span {
+    font-size: 16px;
+    margin: 0 5px;
+  }
+
+  .hero5 div.grid_table {
+    margin: 10px auto;
+    width: 100%;
+    grid-template-columns: repeat(4, 2fr); 
+    grid-auto-rows: (60px, auto);
+ 
+    /* gap: 1px; */
+  }
+
+  .hero5 div.grid_table div.gudaha {
+    padding: 8px;
+  font-size: 16px;
+
+  text-align: center;
+ 
+ 
+    border: 1px solid white;
+  color: white;
+  
+  }
+    /* section six  */
+  section.hero6 div.hero6_title{
+    display: flex;
+    gap: 8px;
+   justify-content: center;
+   margin-left: 0px;
+   width: 100%;
+   padding: 30px;
+
+  }
+  section.hero6 div.cards{
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+  }
+    section.hero6 div.cards div.cont_card{
+margin-right: 15%;
+  }
+section.hero6 div.cards div.card1 div.card_desc{
+  margin-bottom: 5px;
+}
+section.hero6 div.hero6_title h1{
+  font-size: 20px;
+}
+/* last section */
+
+section.last_section div.parts{
+  grid-template-columns: repeat(1,2fr);
+  gap: 20px;
+  width: 20%;
+  grid-template-rows: auto;
+  margin-left: 0%;
+
+
+}
+section.last_section div.parts.part2{
+  margin-left: 0%;
+
+
+
+}
+div.part2 .row {
+  display: flex;
+  justify-content: center;
+
+
+}
+
+
+ section.last_section div.parts {
+    display: block;
+    width: 100%; 
+    padding: 10px;
+  }
+
+  section.last_section div.parts div.part2 {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */
+    margin: 20px 0px;
+    
+  }
+  div.part2 form{
+  
+  }
+
+  div.part2 .row {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  .send {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .send {
+    margin-top: 10px;
+    width: 120px;
+    
+
+  }
+
+  
+}
+  /*medium screen*/
+ @media (min-width:767px) and (max-width:991px){
+  .container{
+    max-width: 900px;
+  }
+
+
+
+.nav_mobile{
+  display: none;
+}
+.nav_con nav h1 {
+  font-family: poppins;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 60px; 
+}
+/* section 2 style  */
+ .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 25px;
+    margin-left: 10%;
+    padding: 0px 10px;
+  }
+  .hero2 div .hero2_title{
+    display: flex;
+    width: 100%; 
+    /* background-color: green; */
+    margin-left: 0%;
+    /* margin-right: auto;
+    */
+
+  }
+    .card{
+    display: flex;
+    justify-content: center;
+      gap: 14px;
+  }
+    .title h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--madaw);
+  }
+   a.descover {
+       font-size: 14px;
+   }
+      /* section 3  */
+section div .qoraal{
+   position: absolute;
+   top: 5%;
+   left: 25%;
+   color: var(--cadaan);
+   transform: translateY(-20%);
+   padding: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-flow: column nowrap;
+   width: 50%;
+ 
+  }
+
+     section.hero3{
+   height: auto;
+    margin: 40px 0;
+    padding: 0 10px;
+
+  }
+    section div .qoraal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+  }
+    section div .qoraal h1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+    section div .qoraal p {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+   .hero4{
+display: flex;
+flex-direction: column;
+padding: 20px;
+  }
+  .hero4 div.title_hero4{
+width: 100%;
+margin-left: 0%;
+margin-right: 0%;
+   }
+   .hero4 .qeybo {
+    flex-direction: column;
+    padding: 30px 10px;
+    /* background-color: red; */
+   }
+    .hero4 .sawirka_weyn{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+          height: 400px;
+          width: 600px;
+         margin-left: 20%;
+        
+        
+    }
+
+  
+    
+   
+  .hero4 .button-container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+margin: 10px 0px;
+ /* background-color: green; */
+  }
+   .hero4 .btn {
+    background-color: var(--buluug1);
+    color: var(--cadaan);
+    padding: 15px 25px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    width: 95%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+ 
+  }
+  .hero4 .sawirka_weyn {
+    margin-top: 20px;
+   
+  }
+  .hero4 .btn2{
+    padding: 10px 0px;
+  width: 30%;
+  height: 50px;
+  border-radius: 0%;
+  }
+   .hero4 .view{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   
+   
+   }
+    
+   
+    /* section five ------ */
+   section.hero5 {
+    padding: 20px;
+    margin-top: 50px;
+    background-position: center top;
+  }
+
+  .hero5 div.title_hero5 {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero5 div.title_hero5 h1 {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .hero5 div.title_hero5 p {
+    font-size: 16px;
+  }
+
+  .week_days {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto 0 auto;
+    padding: 10px;
+  }
+
+  .week_days span {
+    font-size: 16px;
+    margin: 0 5px;
+  }
+
+  .hero5 div.grid_table {
+    margin: 10px auto;
+    width: 100%;
+    grid-template-columns: repeat(4, 2fr); 
+    grid-auto-rows: (60px, auto);
+    justify-content: center;
+    align-content: center;
+
+ 
+    /* gap: 1px; */
+  }
+
+  .hero5 div.grid_table div.gudaha {
+    padding: 8px;
+  font-size: 16px;
+
+  text-align: center;
+    border: 1px solid white;
+  color: white;
+  
+  }
+    /* section six  */
+  section.hero6 div.hero6_title{
+    display: flex;
+    gap: 8px;
+   justify-content: center;
+   margin-left: 0px;
+   width: 100%;
+   padding: 30px;
+  
+
+  }
+  section.hero6 div.cards{
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+  section.hero6 div.cards div.cont_card{
+margin-right: 15%;
+  }
+section.hero6 div.cards div.card1 div.card_desc{
+  margin-bottom: 5px;
+
+}
+section.hero6 div.hero6_title h1{
+  font-size: 20px;
+}
+section.hero6 div.cards div.card1 div.sawir img{
+flex: 1;
+
+}
+/* last section */
+
+ section.last_section div.parts {
+    display: block;
+    width: 100%; 
+    padding: 10px;
+  }
+
+  section.last_section div.parts div.part2 {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */
+    margin: 20px 0px;
+    
+  }
+  div.part2 form{
+  
+  }
+
+  
+    div.part2 .row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .row input[type="text"],
+  .row input[type="email"] {
+    width: 100%;
+  }
+
+  .send {
+    width: 100%;
+  }
+
+
+
+ }
+  
+ 
+
+
+
+  /*lG screen */
+  
+  @media (min-width:992px) and (max-width:1200px){
+      .container{
+          max-width: 1000px;
+      }
+   .nav_con nav h1 {
+  font-family: poppins;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 60px; 
+}
+     .nav_mobile{
+        display: none;
+      }
+   
+         /* section five ------ */
+   section.hero5 {
+    padding: 20px;
+    margin-top: 50px;
+    background-position: center top;
+   
+  }
+
+  .hero5 div.title_hero5 {
+    width: 60%;
+    /* margin: 0 auto; */
+    margin-left: 40%;
+    margin-right: auto;
+    margin-top: 0px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     /* background-color: red; */
+  }
+
+  .hero5 div.title_hero5 h1 {
+    font-size: 28px;
+    line-height: 24px;
+  }
+
+  .hero5 div.title_hero5 p {
+    font-size: 16px;
+  }
+
+  .week_days {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto 0px 140px;
+    padding: 10px;
+   
+  }
+
+  .week_days span {
+    font-size: 18px;
+    margin: 0 5px;
+  }
+
+  .hero5 div.grid_table {
+    /* margin: 10px auto; */
+    margin-top: 10px;
+    margin-bottom:10px;
+    margin-left: 10%;
+    margin-right: auto;
+    width: 100%;
+    grid-template-columns: repeat(4, 2fr); 
+    grid-auto-rows: (80px, auto);
+    justify-content: center;
+    align-content: center;
+    
+ 
+    /* gap: 1px; */
+  }
+
+  .hero5 div.grid_table div.gudaha {
+    padding: 8px;
+  font-size: 16px;
+
+text-align: center;
+ border: 1px solid white;
+  color: white;
+  
+  }
+  /* section4  */
+  section.hero6 div.cards{
+    gap: 10px;
+    grid-template-columns: repeat(3,3fr);
+      /* width: 70%; */
+      justify-content: center;
+   
+    
+  }
+  /* section.hero6 div.cards div.card1{
+    width: 240px;
+    padding: 20px;
+  } */
+
+
+
+
+
+    /* section five ------ */
+   section.hero5 {
+    padding: 20px;
+    margin-top: 50px;
+    background-position: center top;
+  }
+
+  .hero5 div.title_hero5 {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero5 div.title_hero5 h1 {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .hero5 div.title_hero5 p {
+    font-size: 16px;
+  }
+
+  .week_days {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto 0 auto;
+    padding: 10px;
+  }
+
+  .week_days span {
+    font-size: 16px;
+    margin: 0 5px;
+  }
+
+  .hero5 div.grid_table {
+    margin: 10px auto;
+    width: 100%;
+    grid-template-columns: repeat(4, 2fr); 
+    grid-auto-rows: (60px, auto);
+    justify-content: center;
+    align-content: center;
+
+ 
+    /* gap: 1px; */
+  }
+
+  .hero5 div.grid_table div.gudaha {
+    padding: 8px;
+  font-size: 16px;
+
+  text-align: center;
+    border: 1px solid white;
+  color: white;
+  
+  }
+    /* last scetion  */
+   section.last_section div.parts {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 0 40px;
+    align-items: start;
+  }
+
+  section.last_section div.parts .part1 iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+  }
+
+  section.last_section div.parts .part2 {
+    align-items: flex-start;
+  }
+
+  div.part2 form {
+    max-width: 500px;
+  }
+
+  footer {
+    margin-left: 0;
+  }
+    
+   
+  }
+  /*x-large screen */
+  @media (min-width:1200px) and (max-width:1400px){
+      .container{
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 0px 20;
+      }
+      .nav_mobile{
+        display: none;
+      }
+ .nav_con nav h1 {
+  font-family: poppins;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 60px; 
+}
+      /* section five ------ */
+   section.hero5 {
+    padding: 20px;
+    margin-top: 50px;
+    background-position: center top;
+   
+  }
+
+  .hero5 div.title_hero5 {
+    width: 60%;
+    margin-left: 30%;
+    margin-right: auto;
+    /* margin-top: 0px; */
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+
+  .hero5 div.title_hero5 h1 {
+    font-size: 28px;
+    line-height: 24px;
+  }
+
+  .hero5 div.title_hero5 p {
+    font-size: 16px;
+  }
+
+  .week_days {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto 0px 190px;
+    padding: 10px;
+   
+  }
+
+  .week_days span {
+    font-size: 18px;
+    margin: 0 5px;
+  }
+
+  .hero5 div.grid_table {
+    /* margin: 10px auto; */
+    margin-top: 20px;
+    margin-bottom:20px;
+    margin-left: 5%;
+    margin-right: auto;
+    width: 100%;
+    grid-template-columns: repeat(4, 2fr); 
+    grid-auto-rows: (80px, auto);
+    justify-content: center;
+    align-content: center;
+    
+ 
+    /* gap: 1px; */
+  }
+
+  .hero5 div.grid_table div.gudaha {
+    padding: 8px;
+  font-size: 16px;
+
+  text-align: center;
+ 
+  
+    border: 1px solid white;
+  color: white;
+  
+  }
+  /* lat section */
+
+
+     
+  }
+  
+  /*xx-large screen */
+  @media (min-width:1400px) {
+      .container{
+          max-width: 1200px;
+
+          }
+          .nav_mobile{
+            display: none;
+          }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
